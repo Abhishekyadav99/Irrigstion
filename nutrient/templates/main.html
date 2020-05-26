@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+	.vertical-center{
+    text-align: center;
+	padding: 10px 15px;
+    margin:0;
+    position:absolute;
+    top:60%;
+    left:44%;
+    }
+
+    .d1{
+	font:bold;
+	font-size: 20px;
+	text-align: center;
+    }
+
+
+    </style>
+</head>
+<body bgcolor="green">
+    <form action="/form_avmain" method="post">
+
+		<table>
+			<br><br><br>
+			<tr>
+				<div class="d1">
+					<h1> Nutrient</h1>
+				</div>
+			</tr>
+			<br><br>
+
+
+			<tr>
+				<div class="d1">
+					<input min="3" max="9" type="number" name="ph" id="ph" class="validate"/><b>Enter_pH_Value</b><br>
+					<p>enter number between 3 to 9</p>
+				</div>
+			</tr>
+
+			<br>
+
+			<tr>
+				<div class="vertical-center">
+					<button class="btn btn-primary">Submite</button>
+				</div>
+			</tr>
+		</table>
+    </form>
+
+      	<br>
+        	{{pred}}
+		<br>
+</body>
+</html>
